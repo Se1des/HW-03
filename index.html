@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>GYMREX</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<div class="root">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__menu">
+						<a class="logo" href="#">gym <span style="color:#2196F3">rex</span> </a>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__item"><a class="menu__link" href="#exercises">EXERCISES</a></li>
+								<li class="menu__item"><a class="menu__link" href="#trainers">TRAINERS</a></li>
+								<li class="menu__item"><a class="menu__link user-actions__item" href="#">gymrex118@gmail.com</a></li>
+								<li class="menu__item"><a class="menu__link user-actions__item" href="#">+	380991421268</a></li>
+							</ul>
+							<button class="menu__btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="top">
+				<div class="container">
+					<div class="top__inner">
+						<div class="top__content">
+							<h1 class="top__title">Effective solutions for your training</h1>
+							<button class="top__btn" onclick="openModal()">Замовити послугу</button>
+						</div>
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal()">&times;</span>
+								<h2 class="form__title">Замовити послугу</h2>
+								<form>
+									<label class="form__name" for="name">Ім'я:</label><br>
+									<input class="form__input" type="text" id="name" name="name"><br>
+									<label class="form__name" for="phone">Номер телефону:</label><br>
+									<input class="form__input" type="text" id="phone" name="phone"><br>
+									<label class="form__name" for="email">Email:</label><br>
+									<input class="form__input" type="text" id="email" name="email"><br><br>
+									<label for="message">Повідомлення:</label><br>
+									<textarea class="form__input form__textarea" id="message" name="message" rows="4" cols="50"></textarea><br><br>
+									<button class="form__btn" type="submit">Відправити</button>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="exercises" class="exercises">
+				<div class="container">
+					<div class="exercises__inner">
+						<h2 class="title">Popular Exercises</h2>
+						<ul class="exercises__list">
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises1.png" alt="#">
+								<h3 class="exercises__title">Treadmill</h3>
+							</li>
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises2.png" alt="#">
+								<h3 class="exercises__title">Stretching</h3>
+							</li>
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises3.png" alt="#">
+								<h3 class="exercises__title">Yoga</h3>
+							</li>
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises4.png" alt="#">
+								<h3 class="exercises__title">Running</h3>
+							</li>
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises5.png" alt="#">
+								<h3 class="exercises__title">Lifting</h3>
+							</li>
+							<li class="exercises__item">
+								<img class="exercises__img" src="img/exercises6.png" alt="#">
+								<h3 class="exercises__title">PushUp</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="trainers" class="trainers">
+				<div class="container">
+					<div class="trainers__content">
+						<div class="trainers-box"></div>
+						<div class="trainers-inner">
+							<h2 class="title">Workout <br> Program Made For You</h2>
+							<ul class="trainers__list">
+								<li class="trainers__item">
+									<img class="trainers__img" src="img/trainers1.png" alt="#">
+									<h4 class="trainers__title">Samantha William</h4>
+									<a class="trainers__link" href="#">Trainer</a>
+								</li>
+								<li class="trainers__item trainers__item-custom">
+									<img class="trainers__img" src="img/trainers2.png" alt="#">
+									<h4 class="trainers__title">Karen Summer</h4>
+									<a class="trainers__link" href="#">Trainer</a>
+								</li>
+								<li class="trainers__item">
+									<img class="trainers__img" src="img/trainers3.png" alt="#">
+									<h4 class="trainers__title">Jonathan Wise</h4>
+									<a class="trainers__link" href="#">Trainer</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="trainers__swiper">
+						<h2 class="title">Workout <br> Program Made For You</h2>
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers1.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers2.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers3.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers2.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers3.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__cart">
+										<img class="swiper__img" src="img/trainers1.png" alt="">
+										<h4 class="swiper__title">Samantha William</h4>
+										<a class="swiper__link" href="#">Trainer</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-inner">
+					<ul class="footer-list">
+						<h4 class="list-title">Integrations</h4>
+						<li class="list-item">Pricing</li>
+						<li class="list-item">Integrations</li>
+						<li class="list-item">Affilliate Programs</li>
+						<li class="list-item">Agency Partners</li>
+					</ul>
+					<ul class="footer-list">
+						<h4 class="list-title">Marketing</h4>
+						<li class="list-item">Entrepreneur</li>
+						<li class="list-item">Online marketer</li>
+						<li class="list-item">Marketing manager</li>
+					</ul>
+					<ul class="footer-list">
+						<h4 class="list-title">Head</h4>
+						<li class="list-item">About</li>
+						<li class="list-item">Careers</li>
+						<li class="list-item">API Docs</li>
+					</ul>
+					<ul class="footer-list">
+						<h4 class="list-title">solutions</h4>
+						<li class="list-item">Entrepreneur</li>
+						<li class="list-item">Online marketer</li>
+						<li class="list-item">Marketing manager</li>
+					</ul>
+					<ul class="footer-list">
+						<h4 class="list-title">Editors</h4>
+						<li class="list-item">Entrepreneur</li>
+						<li class="list-item">Online marketer</li>
+					</ul>
+				</div>
+				<p class="year">
+					<button class="year__btn">Copyright © 2022</button>
+				<div class="additional-info">
+					<p class="yers__text">
+						Цей веб-сайт є результатом творчої праці та є власністю автора. Усі права захищені авторським правом.
+						Будь-яке копіювання, репродукція або використання матеріалів цього сайту без попереднього дозволу автора є
+						забороненим і може призвести до правових наслідків.
+					</p>
+				</div>
+				</p>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
+
+
